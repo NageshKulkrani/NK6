@@ -13,9 +13,9 @@ pubnub = Pubnub(publish_key='demo', subscribe_key='demo')
 channel = 'pi-house'
 
 pin = 4                         ## We're working with gpio 4
-RELAY1 = 17                     ## We're working with gpio 17
-RELAY2 = 27                     ## We're working with gpio 27
-RELAY3 = 28                     ## We're working with gpio 27
+RELAY1 = 21                     ## We're working with gpio 17
+RELAY2 = 20                     ## We're working with gpio 27
+RELAY3 = 16                     ## We're working with gpio 27
 GPIO.setmode(GPIO.BCM)          ## Use BCM pin numbering
 GPIO.setup(pin, GPIO.IN)        ## Set gpio 4 to OUTPUT
 GPIO.setup(RELAY1, GPIO.OUT)    ## Set gpio 17 to OUTPUT
